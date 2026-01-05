@@ -1,0 +1,465 @@
+/* Component Styles */
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.btn-tertiary {
+  background: var(--color-primary);
+  color: white;
+  font-size: var(--font-size-base);
+  padding: 10px 24px;
+}
+
+.btn-tertiary:hover {
+  background: #43464d;
+  transform: translateY(-2px);
+}
+
+.btn-large {
+  padding: 16px 40px;
+  font-size: var(--font-size-xl);
+}
+
+/* Video Carousel */
+.splide {
+  margin-top: var(--space-2xl);
+  padding: var(--space-lg) 0;
+}
+
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-wrapper {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  opacity: 0.4;
+  transform: scale(0.85);
+  transition: all var(--transition-slow);
+}
+
+.splide__slide.is-active .video-wrapper {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: var(--shadow-xl);
+}
+
+.video-wrapper:hover {
+  opacity: 1;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+}
+
+.video-horizontal iframe {
+  aspect-ratio: 16 / 9;
+}
+
+/* Splide Arrows */
+.splide__arrow {
+  background: white;
+  border: 2px solid var(--color-border);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.splide__arrow:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.splide__arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Accordion */
+.accordion-item {
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-md);
+  overflow: hidden;
+  background: white;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-xl);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+  background: white;
+  cursor: pointer;
+  transition: background var(--transition-base);
+}
+
+.accordion-header:hover {
+  background: var(--color-bg-light);
+}
+
+.accordion-number {
+  color: var(--color-text-light);
+  font-weight: var(--font-weight-black);
+}
+
+.accordion-title {
+  flex: 1;
+}
+
+.accordion-icon {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-light);
+  transition: transform var(--transition-base);
+}
+
+.accordion-header[aria-expanded="true"] .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-slow);
+}
+
+.accordion-content.active {
+  max-height: 500px;
+}
+
+.accordion-content p {
+  padding: 0 var(--space-xl) var(--space-lg);
+  color: var(--color-text);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Flip Cards */
+.flip-card {
+  perspective: 1000px;
+  height: 320px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform var(--transition-slow);
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.flip-card-front {
+  background: white;
+}
+
+.flip-card-front img {
+  width: 120px;
+  height: auto;
+}
+
+.flip-card-back {
+  background: white;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.flip-card-back h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-md);
+  color: var(--color-primary);
+}
+
+.flip-card-back p {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text);
+}
+
+/* Flip Card Color Variants */
+.flip-card-pink .flip-card-front {
+  background: var(--color-pink);
+}
+
+.flip-card-yellow .flip-card-front {
+  background: var(--color-yellow);
+}
+
+.flip-card-lavender .flip-card-front {
+  background: var(--color-lavender);
+}
+
+.flip-card-green .flip-card-front {
+  background: var(--color-green);
+}
+
+/* Pricing Cards */
+.pricing-card {
+  background: white;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.pricing-card-popular {
+  border-color: var(--color-primary);
+  border-width: 3px;
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: white;
+  padding: 6px 20px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+.pricing-header {
+  text-align: center;
+  padding-bottom: var(--space-lg);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.pricing-name {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-black);
+  margin-bottom: var(--space-sm);
+  color: var(--color-primary);
+}
+
+.pricing-price {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-sm);
+}
+
+.pricing-description {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+}
+
+.pricing-features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.pricing-features li {
+  font-size: var(--font-size-base);
+  padding-left: var(--space-lg);
+  position: relative;
+}
+
+.pricing-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+.feature-disabled::before {
+  content: '✗';
+  color: var(--color-text-light);
+}
+
+.feature-disabled {
+  color: var(--color-text-light);
+}
+
+.pricing-includes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+}
+
+.pricing-includes li {
+  font-size: var(--font-size-base);
+  padding-left: var(--space-lg);
+  position: relative;
+}
+
+.pricing-includes li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+/* FAQ */
+.faq-header h2 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-black);
+  margin-bottom: var(--space-2xl);
+  color: var(--color-primary);
+}
+
+.faq-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  text-align: center;
+}
+
+.faq-headshot {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.faq-item {
+  background: white;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.faq-item:not(:last-child) {
+  margin-bottom: var(--space-sm);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-xl);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+  background: white;
+  cursor: pointer;
+  transition: background var(--transition-base);
+}
+
+.faq-question:hover {
+  background: var(--color-bg-light);
+}
+
+.faq-icon {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-light);
+  transition: transform var(--transition-base);
+  flex-shrink: 0;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-slow);
+}
+
+.faq-answer.active {
+  max-height: 300px;
+}
+
+.faq-answer p {
+  padding: 0 var(--space-xl) var(--space-lg);
+  color: var(--color-text);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .flip-card {
+    height: 280px;
+  }
+
+  .flip-card-front img {
+    width: 80px;
+  }
+
+  .pricing-card {
+    padding: var(--space-lg);
+  }
+}

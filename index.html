@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapVideo - Make your videos extra Snappy</title>
+  <meta name="description" content="Get high-performing branded videos delivered lightning-fast — without the agency overhead, scope creep, or inconsistent quality. Trusted by Google, Webflow, Cloudflare, and more.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/webclip.png">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SnapVideo - Make your videos extra Snappy">
+  <meta property="og:description" content="Create video in half the time – with half the cost">
+  <meta property="og:image" content="images/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SnapVideo - Make your videos extra Snappy">
+  <meta name="twitter:description" content="Create video in half the time – with half the cost">
+  <meta name="twitter:image" content="images/og-image.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Splide Carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.2/dist/css/splide-core.min.css">
+
+  <!-- Calendly -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="logo">
+          <img src="images/logos/Group-145.svg" alt="SnapVideo Logo" width="205" height="30">
+          <span>SnapVideo</span>
+        </a>
+
+        <div class="nav-menu" id="navMenu">
+          <a href="#examples" class="nav-link">Examples</a>
+          <a href="#how-it-works" class="nav-link">How it Works</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="https://calendly.com/third-coast-films/30min" class="btn btn-primary" id="calendlyBtn">Get in touch</a>
+        </div>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Create video in half the time – with half the cost</h1>
+        <p class="hero-subtitle">Get high-performing branded videos delivered lightning-fast — without the agency overhead, scope creep, or inconsistent quality.</p>
+        <a href="https://calendly.com/third-coast-films/30min" class="btn btn-secondary btn-large">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Logos -->
+  <section class="clients">
+    <div class="container">
+      <h4 class="clients-heading">TRUSTED BY MORE THAN 1,000 MARKETING AND CREATOR TEAMS OF ALL SIZES</h4>
+      <div class="clients-wrapper">
+        <div class="clients-scroll">
+          <div class="clients-track">
+            <img src="images/logos/Google.png" alt="Google" loading="lazy">
+            <img src="images/logos/Webflow-logo.png" alt="Webflow" loading="lazy">
+            <img src="images/logos/Cloudflare.png" alt="Cloudflare" loading="lazy">
+            <img src="images/logos/Booking.png" alt="Booking.com" loading="lazy">
+            <img src="images/logos/Intuit-logo.png" alt="Intuit" loading="lazy">
+            <img src="images/logos/Mural-Logo.png" alt="Mural" loading="lazy">
+            <img src="images/logos/optimizely-vector-logo.png" alt="Optimizely" loading="lazy">
+            <img src="images/logos/Amplitude.png" alt="Amplitude" loading="lazy">
+            <img src="images/logos/Alto-Pharmacy.png" alt="Alto Pharmacy" loading="lazy">
+            <img src="images/logos/Data-Grail_transparent.png" alt="DataGrail" loading="lazy">
+            <img src="images/logos/Clockwise.png" alt="Clockwise" loading="lazy">
+            <img src="images/logos/Crew.png" alt="Crew" loading="lazy">
+            <img src="images/logos/Miniflix.png" alt="Miniflix" loading="lazy">
+            <img src="images/logos/Alen.png" alt="Alen" loading="lazy">
+            <img src="images/logos/adjust-gmbh-logo-vector.png" alt="Adjust" loading="lazy">
+            <img src="images/logos/Dr-Eats_transparent.png" alt="Dr. Eats" loading="lazy">
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="clients-track" aria-hidden="true">
+            <img src="images/logos/Google.png" alt="Google" loading="lazy">
+            <img src="images/logos/Webflow-logo.png" alt="Webflow" loading="lazy">
+            <img src="images/logos/Cloudflare.png" alt="Cloudflare" loading="lazy">
+            <img src="images/logos/Booking.png" alt="Booking.com" loading="lazy">
+            <img src="images/logos/Intuit-logo.png" alt="Intuit" loading="lazy">
+            <img src="images/logos/Mural-Logo.png" alt="Mural" loading="lazy">
+            <img src="images/logos/optimizely-vector-logo.png" alt="Optimizely" loading="lazy">
+            <img src="images/logos/Amplitude.png" alt="Amplitude" loading="lazy">
+            <img src="images/logos/Alto-Pharmacy.png" alt="Alto Pharmacy" loading="lazy">
+            <img src="images/logos/Data-Grail_transparent.png" alt="DataGrail" loading="lazy">
+            <img src="images/logos/Clockwise.png" alt="Clockwise" loading="lazy">
+            <img src="images/logos/Crew.png" alt="Crew" loading="lazy">
+            <img src="images/logos/Miniflix.png" alt="Miniflix" loading="lazy">
+            <img src="images/logos/Alen.png" alt="Alen" loading="lazy">
+            <img src="images/logos/adjust-gmbh-logo-vector.png" alt="Adjust" loading="lazy">
+            <img src="images/logos/Dr-Eats_transparent.png" alt="Dr. Eats" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Portfolio -->
+  <section class="portfolio" id="examples">
+    <div class="container">
+      <h2 class="section-title">Recent videos from our team:</h2>
+
+      <div class="splide" id="videoCarousel">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="video-wrapper video-vertical">
+                <iframe src="https://fast.wistia.net/embed/iframe/40bmx93vp7?web_component=true&seo=true" title="Cloudflare Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="video-wrapper video-horizontal">
+                <iframe src="https://fast.wistia.net/embed/iframe/fidkqrjjss?web_component=true&seo=true" title="Booking.com Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="video-wrapper video-vertical">
+                <iframe src="https://fast.wistia.net/embed/iframe/xewwy4f3vw?web_component=true&seo=true" title="DroneDeploy Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="video-wrapper video-vertical">
+                <iframe src="https://fast.wistia.net/embed/iframe/mkg8zffuge?web_component=true&seo=true" title="Ladies Who Create Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="video-wrapper video-horizontal">
+                <iframe src="https://fast.wistia.net/embed/iframe/uh50zetyph?web_component=true&seo=true" title="Webflow Customer Spotlight Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How SnapVideo Works</h2>
+      <p class="section-subtitle">Our streamlined 3-step process ensures high quality branded video content gets produced by your entire organization</p>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-number">1.</span>
+            <span class="accordion-title">Custom Dashboard</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Your custom dashboard lets you submit video details to ensure your dedicated editor is on point with goals, format, branding guidelines, and other specs.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-number">2.</span>
+            <span class="accordion-title">Production</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Our hybrid-agency team goes to work creating a hand-crafted video to your exact specs.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-number">3.</span>
+            <span class="accordion-title">Delivery</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Your video is delivered on time and on point.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section class="why-choose">
+    <div class="container">
+      <h2 class="section-title">Why Choose SnapVideo?</h2>
+      <p class="section-subtitle">Eliminate the common pain points of video production while maintaining brand consistency and quality across all your teams.</p>
+
+      <div class="flip-cards">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/icons/noun-lightning-bolt-7760482-1.png" alt="Lightning Fast" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <h3>Lightning Fast</h3>
+              <p>Get your branded videos produced and delivered faster than traditional agencies, without compromising on quality or brand standards</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card flip-card-pink">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/icons/noun-brand-identity-6614895.png" alt="Brand Consistency" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <h3>Brand Consistency</h3>
+              <p>Maintain perfect brand alignment across all video content with our systematic approach to brand guidelines and templates.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card flip-card-yellow">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/icons/noun-scalability-8051486.png" alt="Team Scalability" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <h3>Team Scalability</h3>
+              <p>Empower every team member to create professional videos without extensive training or technical expertise.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card flip-card-lavender">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/icons/noun-cost-effective-7050074.png" alt="Cost Effective" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <h3>Cost Effective</h3>
+              <p>Eliminate agency overhead and scope creep while reducing per-video costs through our streamlined production process</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card flip-card-green">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/icons/noun-achievement-6512380.png" alt="Expert Experience" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <h3>Expert Experience</h3>
+              <p>Our editors and producers bring decades of real-world experience across brand, broadcast, and digital media. We've scaled campaigns for startups and Fortune 500s alike.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title">Packages for all types of projects:</h2>
+
+      <div class="pricing-grid">
+        <!-- Starter -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Starter</h3>
+            <p class="pricing-price">$1,500/mo</p>
+            <p class="pricing-description">Perfect for content creators and small teams</p>
+          </div>
+
+          <ul class="pricing-features">
+            <li class="feature-highlight">Pause anytime</li>
+            <li class="feature-highlight">Expert Editor</li>
+            <li class="feature-highlight">YouTube shorts/Reels Specialist</li>
+            <li class="feature-disabled">Full-time Producer</li>
+          </ul>
+
+          <ul class="pricing-includes">
+            <li>8-10 videos per month</li>
+            <li>YouTube shorts/Reels Specialist</li>
+            <li>Basic Motion graphics</li>
+            <li>AI generated video</li>
+            <li>3 rounds of revisions</li>
+            <li>Slack support</li>
+            <li>Brand kit integration</li>
+          </ul>
+
+          <a href="https://calendly.com/third-coast-films/30min" class="btn btn-secondary">Select</a>
+        </div>
+
+        <!-- Growth (Most Popular) -->
+        <div class="pricing-card pricing-card-popular">
+          <span class="pricing-badge">Most Popular</span>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Growth</h3>
+            <p class="pricing-price">$4,500/mo</p>
+            <p class="pricing-description">For growing brands that mean business</p>
+          </div>
+
+          <ul class="pricing-features">
+            <li class="feature-highlight">Everything from Starter!</li>
+            <li class="feature-highlight">Expert Motion Designer & Editor</li>
+            <li class="feature-highlight">Pause anytime</li>
+            <li class="feature-disabled">Full-time Producer</li>
+          </ul>
+
+          <ul class="pricing-includes">
+            <li>5-10 videos per month</li>
+            <li>Custom Motion graphics</li>
+            <li>4 rounds of revisions</li>
+            <li>Custom thumbnails</li>
+            <li>Unlimited AI generated clips</li>
+            <li>Unlimited Stock Footage clips</li>
+            <li>Brand kit integration</li>
+          </ul>
+
+          <a href="https://calendly.com/third-coast-films/30min" class="btn btn-secondary">Select</a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Studio Enterprise</h3>
+            <p class="pricing-price">Talk to us</p>
+            <p class="pricing-description">Specialists in a variety of video styles</p>
+          </div>
+
+          <ul class="pricing-features">
+            <li class="feature-highlight">For agencies and enterprise teams</li>
+            <li class="feature-highlight">Specialists in a variety of video styles</li>
+            <li class="feature-highlight">Custom packages</li>
+            <li class="feature-disabled">Full-time creative team</li>
+          </ul>
+
+          <ul class="pricing-includes">
+            <li>Premium motion design</li>
+            <li>Custom brand templates</li>
+            <li>Unlimited revisions</li>
+            <li>Priority turnaround</li>
+            <li>24/7 Slack support</li>
+            <li>Monthly strategy calls</li>
+            <li>Rollover credits</li>
+          </ul>
+
+          <a href="https://calendly.com/third-coast-films/30min" class="btn btn-secondary">Select</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-wrapper">
+        <div class="faq-header">
+          <h2>Have questions?</h2>
+          <div class="faq-cta">
+            <img src="images/div.faq-christian.png" alt="Christian" class="faq-headshot" loading="lazy">
+            <p>Have more questions?<br>Book a free discovery call.</p>
+            <a href="https://calendly.com/third-coast-films/30min" class="btn btn-tertiary">Book a call</a>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How many videos will I get?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Depends on your needs. Once you fill out our video creative brief generator, we'll have a better idea so you can get the most bang for your buck.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do I really get a full-time Producer?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, our producers are top talent with experience managing projects that span above $1million projects. This includes films, motion, VFX, animation and more.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can my editor turn my long-form videos into shorts?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we can do that with any project. In fact, we recommend it!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What if it's not a fit with my Producer or Editor?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We get it, sometimes the chemistry just isn't there. If you are still finding value in our services we will assign a new team to support your needs.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What if I want more than one editor?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>If the case, lets chat. We are more than happy to provide a solution to fit your video scaling needs.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you have other roles to help our marketing team?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we have designers, illustrators, demand gen and developers that can assist with anything you need marketing related.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you offer trials or make example videos?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we do want to provide value to you and are happy to create something for you, however this would include a water mark.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I cancel if I don't like it?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, you can pause our service at any time, so if you don't need a video that month, you can pause up to 2 months.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-brand">
+          <a href="#" class="logo">SnapVideo</a>
+        </div>
+
+        <nav class="footer-nav">
+          <a href="#examples">Example</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQs</a>
+        </nav>
+
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.5 6H13.5C12.9477 6 12.5 6.44772 12.5 7V10H16.5C16.6137 9.99748 16.7216 10.0504 16.7892 10.1419C16.8568 10.2334 16.8758 10.352 16.84 10.46L16.1 12.66C16.0318 12.8619 15.8431 12.9984 15.63 13H12.5V20.5C12.5 20.7761 12.2761 21 12 21H9.5C9.22386 21 9 20.7761 9 20.5V13H7.5C7.22386 13 7 12.7761 7 12.5V10.5C7 10.2239 7.22386 10 7.5 10H9V7C9 4.79086 10.7909 3 13 3H16.5C16.7761 3 17 3.22386 17 3.5V5.5C17 5.77614 16.7761 6 16.5 6Z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16 3H8C5.23858 3 3 5.23858 3 8V16C3 18.7614 5.23858 21 8 21H16C18.7614 21 21 18.7614 21 16V8C21 5.23858 18.7614 3 16 3ZM19.25 16C19.2445 17.7926 17.7926 19.2445 16 19.25H8C6.20735 19.2445 4.75549 17.7926 4.75 16V8C4.75549 6.20735 6.20735 4.75549 8 4.75H16C17.7926 4.75549 19.2445 6.20735 19.25 8V16ZM16.75 8.25C17.3023 8.25 17.75 7.80228 17.75 7.25C17.75 6.69772 17.3023 6.25 16.75 6.25C16.1977 6.25 15.75 6.69772 15.75 7.25C15.75 7.80228 16.1977 8.25 16.75 8.25ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5027 10.8057 16.0294 9.65957 15.1849 8.81508C14.3404 7.97059 13.1943 7.49734 12 7.5ZM9.25 12C9.25 13.5188 10.4812 14.75 12 14.75C13.5188 14.75 14.75 13.5188 14.75 12C14.75 10.4812 13.5188 9.25 12 9.25C10.4812 9.25 9.25 10.4812 9.25 12Z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.9728 6.7174C20.5084 7.33692 19.947 7.87733 19.3103 8.31776C19.3103 8.47959 19.3103 8.64142 19.3103 8.81225C19.3154 11.7511 18.1415 14.5691 16.0518 16.6345C13.962 18.6999 11.1312 19.8399 8.19405 19.7989C6.49599 19.8046 4.81967 19.4169 3.29642 18.6661C3.21428 18.6302 3.16131 18.549 3.16162 18.4593V18.3604C3.16162 18.2313 3.26623 18.1267 3.39527 18.1267C5.06442 18.0716 6.67402 17.4929 7.99634 16.4724C6.48553 16.4419 5.12619 15.5469 4.5006 14.1707C4.46901 14.0956 4.47884 14.0093 4.52657 13.9432C4.57429 13.8771 4.653 13.8407 4.73425 13.8471C5.19342 13.8932 5.65718 13.8505 6.1002 13.7212C4.43239 13.375 3.17921 11.9904 2.99986 10.2957C2.99349 10.2144 3.02992 10.1357 3.096 10.0879C3.16207 10.0402 3.24824 10.0303 3.32338 10.062C3.77094 10.2595 4.25409 10.3635 4.74324 10.3676C3.28184 9.40846 2.65061 7.58405 3.20655 5.92622C3.26394 5.76513 3.40181 5.64612 3.5695 5.61294C3.73718 5.57975 3.90996 5.63728 4.02432 5.76439C5.99639 7.86325 8.70604 9.11396 11.5819 9.25279C11.5083 8.95885 11.4721 8.65676 11.4741 8.35372C11.501 6.76472 12.4842 5.34921 13.9634 4.76987C15.4425 4.19054 17.1249 4.56203 18.223 5.71044C18.9714 5.56785 19.695 5.31645 20.3707 4.96421C20.4202 4.93331 20.483 4.93331 20.5325 4.96421C20.5634 5.01373 20.5634 5.07652 20.5325 5.12604C20.2052 5.87552 19.6523 6.50412 18.9509 6.92419C19.5651 6.85296 20.1685 6.70807 20.7482 6.49264C20.797 6.45942 20.8611 6.45942 20.9099 6.49264C20.9508 6.51134 20.9814 6.54711 20.9935 6.59042C21.0056 6.63373 20.998 6.68018 20.9728 6.7174Z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3ZM8 18C8.27614 18 8.5 17.7761 8.5 17.5V10.5C8.5 10.2239 8.27614 10 8 10H6.5C6.22386 10 6 10.2239 6 10.5V17.5C6 17.7761 6.22386 18 6.5 18H8ZM7.25 9C6.42157 9 5.75 8.32843 5.75 7.5C5.75 6.67157 6.42157 6 7.25 6C8.07843 6 8.75 6.67157 8.75 7.5C8.75 8.32843 8.07843 9 7.25 9ZM17.5 18C17.7761 18 18 17.7761 18 17.5V12.9C18.0325 11.3108 16.8576 9.95452 15.28 9.76C14.177 9.65925 13.1083 10.1744 12.5 11.1V10.5C12.5 10.2239 12.2761 10 12 10H10.5C10.2239 10 10 10.2239 10 10.5V17.5C10 17.7761 10.2239 18 10.5 18H12C12.2761 18 12.5 17.7761 12.5 17.5V13.75C12.5 12.9216 13.1716 12.25 14 12.25C14.8284 12.25 15.5 12.9216 15.5 13.75V17.5C15.5 17.7761 15.7239 18 16 18H17.5Z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.2/dist/js/splide.min.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/flip-cards.js"></script>
+  <script src="js/tracking.js"></script>
+</body>
+</html>
