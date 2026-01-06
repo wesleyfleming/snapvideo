@@ -144,11 +144,13 @@
   border-radius: 8px;
   transition: all 0.2s ease;
   width: fit-content;
+  border: 1px solid transparent;
 }
 
 .content-cta:hover {
   background: #e5e5e5;
   gap: 12px;
+  border: 1px solid #22c55e;
 }
 
 .content-cta svg {

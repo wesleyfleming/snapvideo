@@ -152,11 +152,12 @@
     font-weight: 600;
     color: #1a1a1a;
     text-decoration: none;
-    transition: gap 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .cta-link:hover {
     gap: 10px;
+    color: #22c55e;
 }
 
 .cta-link svg {

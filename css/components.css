@@ -15,11 +15,13 @@
 .btn-primary {
   background: var(--color-primary);
   color: white;
+  border: 2px solid transparent;
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
+  border-color: #22c55e;
 }
 
 .btn-secondary {
@@ -31,6 +33,7 @@
 .btn-secondary:hover {
   background: var(--color-primary);
   color: white;
+  border-color: #22c55e;
   transform: translateY(-3px);
 }
 
@@ -339,6 +342,7 @@
 .pricing-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
+  border-color: #22c55e;
 }
 
 .pricing-card-popular {
@@ -351,12 +355,13 @@
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--color-primary);
+  background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
   color: white;
   padding: 6px 20px;
   border-radius: var(--radius-full);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
 }
 
 .pricing-header {
