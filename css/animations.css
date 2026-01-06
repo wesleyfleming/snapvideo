@@ -132,15 +132,15 @@ html {
   transform: scale(1.05);
 }
 
-/* Image lazy loading fade-in */
-img[loading="lazy"] {
+/* Image lazy loading fade-in - disabled for now */
+/* img[loading="lazy"] {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 img[loading="lazy"].loaded {
   opacity: 1;
-}
+} */
 
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
