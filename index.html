@@ -167,37 +167,36 @@
       <h2 class="section-title">How SnapVideo Works</h2>
       <p class="section-subtitle">Our streamlined 3-step process ensures high quality branded video content gets produced by your entire organization</p>
 
-      <div class="accordion">
-        <div class="accordion-item">
-          <button class="accordion-header" aria-expanded="false">
-            <span class="accordion-number">1.</span>
-            <span class="accordion-title">Custom Dashboard</span>
-            <span class="accordion-icon">+</span>
+      <div class="process-tabs">
+        <div class="tab-buttons">
+          <button class="tab-button active" data-tab="brief">
+            <span class="tab-number">1</span>
+            <span class="tab-label">Brief & Assets</span>
           </button>
-          <div class="accordion-content">
-            <p>Your custom dashboard lets you submit video details to ensure your dedicated editor is on point with goals, format, branding guidelines, and other specs.</p>
-          </div>
+          <button class="tab-button" data-tab="production">
+            <span class="tab-number">2</span>
+            <span class="tab-label">Production</span>
+          </button>
+          <button class="tab-button" data-tab="delivery">
+            <span class="tab-number">3</span>
+            <span class="tab-label">Delivery</span>
+          </button>
         </div>
 
-        <div class="accordion-item">
-          <button class="accordion-header" aria-expanded="false">
-            <span class="accordion-number">2.</span>
-            <span class="accordion-title">Production</span>
-            <span class="accordion-icon">+</span>
-          </button>
-          <div class="accordion-content">
-            <p>Our hybrid-agency team goes to work creating a hand-crafted video to your exact specs.</p>
+        <div class="tab-content-wrapper">
+          <div class="tab-content active" id="tab-brief">
+            <h3>Brief & Assets</h3>
+            <p>Fill out a simple creative brief with your video goals, target audience, and key messaging. Upload your assets—logos, footage, graphics—and we take it from there.</p>
           </div>
-        </div>
 
-        <div class="accordion-item">
-          <button class="accordion-header" aria-expanded="false">
-            <span class="accordion-number">3.</span>
-            <span class="accordion-title">Delivery</span>
-            <span class="accordion-icon">+</span>
-          </button>
-          <div class="accordion-content">
-            <p>Your video is delivered on time and on point.</p>
+          <div class="tab-content" id="tab-production">
+            <h3>Production</h3>
+            <p>Our experienced editors and motion designers get to work, crafting a hand-made video tailored to your exact specifications and brand standards.</p>
+          </div>
+
+          <div class="tab-content" id="tab-delivery">
+            <h3>Delivery</h3>
+            <p>Receive your polished video on time and on brand, with included revision rounds to ensure it's exactly what you envisioned.</p>
           </div>
         </div>
       </div>
@@ -511,6 +510,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.2/dist/js/splide.min.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/accordion.js"></script>
+  <script src="js/tabs.js"></script>
   <script src="js/flip-cards.js"></script>
   <script src="js/tracking.js"></script>
 </body>

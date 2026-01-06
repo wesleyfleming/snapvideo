@@ -194,9 +194,131 @@ body {
   padding: var(--space-3xl) 0;
 }
 
-.accordion {
-  max-width: 800px;
-  margin: var(--space-2xl) auto 0;
+.process-tabs {
+  max-width: 1000px;
+  margin: var(--space-3xl) auto 0;
+}
+
+.tab-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.tab-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-xl);
+  background: white;
+  border: 3px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(48, 49, 44, 0.05), rgba(48, 49, 44, 0.15));
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.tab-button:hover::before {
+  opacity: 1;
+}
+
+.tab-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(48, 49, 44, 0.15);
+  border-color: var(--color-primary);
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, var(--color-primary), #43464d);
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(48, 49, 44, 0.25), 0 0 40px rgba(48, 49, 44, 0.2);
+}
+
+.tab-button.active .tab-number,
+.tab-button.active .tab-label {
+  color: white;
+}
+
+.tab-number {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-light);
+  border-radius: 50%;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-black);
+  color: var(--color-primary);
+  transition: all var(--transition-base);
+}
+
+.tab-button.active .tab-number {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.tab-label {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  transition: color var(--transition-base);
+  text-align: center;
+}
+
+.tab-content-wrapper {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  min-height: 200px;
+  box-shadow: var(--shadow-md);
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content h3 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-black);
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.tab-content p {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .tab-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-button {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 
 /* Why Choose */
