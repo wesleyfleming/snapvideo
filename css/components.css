@@ -438,6 +438,62 @@
   color: var(--color-primary);
 }
 
+/* Pricing Subsections */
+.pricing-subsection {
+  text-align: center;
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-lg);
+}
+
+.pricing-subsection-subscriptions {
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.pricing-label {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.pricing-subsection-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.pricing-subsection-desc {
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* One-Time Pricing Cards */
+.pricing-card-onetime .pricing-price-onetime {
+  color: #2563eb;
+}
+
+.pricing-card-onetime.pricing-card-popular {
+  border-color: #2563eb;
+}
+
+.pricing-card-onetime.pricing-card-popular .pricing-badge {
+  background: #2563eb;
+}
+
+.pricing-delivery {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-top: auto;
+  margin-bottom: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
 /* FAQ */
 .faq-header h2 {
   font-size: var(--font-size-3xl);
