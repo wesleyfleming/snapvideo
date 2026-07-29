@@ -1674,20 +1674,10 @@ h1, h2, h3, h4, h5,
   }
 }
 
-/* Balance the columns: steps card stretches to match the left column */
-.fv-cols > .fv-col:last-child {
-  align-self: stretch;
-  display: flex;
-}
-
-.future-video .process-box {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.future-video .content-area {
-  flex: 1;
+/* Advantage block sits in the right column under the steps card (per comp) */
+.fv-advantage {
+  margin-top: 80px;
+  max-width: none;
 }
 
 .future-video .content-visual {
