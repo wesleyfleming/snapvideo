@@ -1695,3 +1695,38 @@ h1, h2, h3, h4, h5,
   color: #fff;
   border-color: #22c55e;
 }
+
+/* 2x2 alignment: benefits-grid top lines up with brand-advantage top */
+.fv-cols {
+  grid-template-rows: auto auto;
+  row-gap: 80px;
+}
+
+.fv-cols .fv-headline {
+  font-size: clamp(2.25rem, 3vw, 3.25rem);
+}
+
+.fv-cols .fv-question {
+  font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+  margin-top: 40px;
+}
+
+.fv-header { grid-column: 1; grid-row: 1; }
+.future-video .features-grid { grid-column: 1; grid-row: 2; margin-top: 0; }
+.future-video .process-box { grid-column: 2; grid-row: 1; }
+.fv-advantage { grid-column: 2; grid-row: 2; margin-top: 0; }
+
+@media (max-width: 1100px) {
+  .fv-cols { row-gap: 0; }
+
+  .fv-header,
+  .future-video .features-grid,
+  .future-video .process-box,
+  .fv-advantage {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .future-video .features-grid { margin-top: 48px; }
+  .fv-advantage { margin-top: 80px; }
+}
