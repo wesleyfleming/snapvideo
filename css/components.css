@@ -588,3 +588,86 @@
     padding: var(--space-lg);
   }
 }
+
+/* --- Week-1 additions (2026-07-29) --- */
+
+/* Hero CTA promise microcopy */
+.hero-cta-note {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Webflow testimonial + Third Coast attribution under the logo wall */
+.testimonial-band {
+  margin: var(--space-2xl) auto 0;
+  max-width: 760px;
+  text-align: center;
+}
+
+.testimonial-band blockquote {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.4;
+  color: var(--color-primary);
+}
+
+.testimonial-band figcaption {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+}
+
+.studio-attribution {
+  margin-top: var(--space-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+}
+
+.studio-attribution a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* Honest caption under the project-brief mockup.
+   .content-visual is a centered flex row, so the caption must force a wrap
+   onto its own line below the mockup card. */
+.content-panel[data-content="1"] .content-visual {
+  flex-wrap: wrap;
+}
+
+.mockup-caption {
+  flex-basis: 100%;
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  text-align: center;
+}
+
+/* Links inside pricing feature lists (ScriptHooks) */
+.pricing-includes a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Footer attribution + legal */
+.footer-legal {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  opacity: 0.75;
+}
+
+.footer-legal p {
+  margin: 4px 0;
+}
+
+.footer-legal a {
+  color: inherit;
+  text-decoration: underline;
+}
