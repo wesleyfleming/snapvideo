@@ -57,7 +57,7 @@
 }
 
 .step-tab.active::after {
-  background: #22c55e;
+  background: var(--brand-red);
 }
 
 .step-number {
@@ -70,7 +70,7 @@
 }
 
 .step-tab.active .step-number {
-  color: #22c55e;
+  color: var(--brand-yellow);
 }
 
 .step-label {
@@ -150,7 +150,7 @@
 .content-cta:hover {
   background: #e5e5e5;
   gap: 12px;
-  border: 1px solid #22c55e;
+  border: 1px solid var(--brand-yellow);
 }
 
 .content-cta svg {
@@ -194,7 +194,7 @@
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  background: linear-gradient(135deg, var(--brand-magenta) 0%, var(--brand-indigo) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,8 +259,8 @@
 }
 
 .mockup-tag.active {
-  background: #dcfce7;
-  color: #166534;
+  background: var(--tint-yellow);
+  color: #111111;
 }
 
 /* Production mockup */
@@ -280,7 +280,7 @@
 .timeline-progress {
   height: 100%;
   width: 65%;
-  background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+  background: linear-gradient(90deg, var(--brand-blue) 0%, var(--brand-indigo) 100%);
   border-radius: 4px;
 }
 
@@ -305,12 +305,12 @@
 }
 
 .stage-dot.complete {
-  background: #22c55e;
+  background: var(--brand-blue);
 }
 
 .stage-dot.current {
   background: #fff;
-  border: 2px solid #22c55e;
+  border: 2px solid var(--brand-blue);
 }
 
 .stage-dot svg {
@@ -385,7 +385,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: #22c55e;
+  background: var(--brand-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -424,7 +424,7 @@
 .feature-icon svg {
   width: 100%;
   height: 100%;
-  stroke: #22c55e;
+  stroke: var(--brand-blue);
 }
 
 .feature-text {

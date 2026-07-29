@@ -100,10 +100,10 @@
 }
 
 .feature-card:nth-child(5) .feature-icon {
-    background: #d1fae5;
+    background: #E3E4F3;
 }
 .feature-card:nth-child(5) .feature-icon svg {
-    stroke: #059669;
+    stroke: #222680;
 }
 
 .feature-card:nth-child(6) .feature-icon {
@@ -157,7 +157,7 @@
 
 .cta-link:hover {
     gap: 10px;
-    color: #22c55e;
+    color: var(--brand-red);
 }
 
 .cta-link svg {
