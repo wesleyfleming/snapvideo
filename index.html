@@ -63,20 +63,38 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <canvas id="perspectiveGrid" class="perspective-grid"></canvas>
+  <section class="hero hero-split">
     <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">The team Google and Webflow call for video. Now at a flat rate.</h1>
-        <p class="hero-subtitle">SnapVideo is the productized arm of Third Coast Films, an Austin studio with 3,000+ videos behind it. Pick a package, send a brief, and get the same senior team on a fixed price and a real deadline.</p>
-        <a href="https://calendly.com/third-coast-films/discovery-call-w-snappyvid?utm_medium=site&utm_content=hero" class="btn btn-secondary btn-large">Book a 15-min intro call</a>
-        <p class="hero-cta-note">15 minutes. We scope your first project, show examples from your industry, and you leave with a fixed quote and delivery date. No pitch.</p>
-        <!-- Swap data-wistia to a dedicated montage reel when one exists -->
-        <button class="hero-reel" data-wistia="fidkqrjjss" data-aspect="horizontal" aria-label="Watch our work">
-          <img src="images/posters/booking.jpg" alt="Booking.com video still" loading="lazy">
-          <span class="hero-reel-play">&#9654;</span>
-          <span class="hero-reel-label">Watch our work</span>
-        </button>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title">The team Google and Webflow call for video. <span class="hero-accent">Now at a flat rate.</span></h1>
+          <p class="hero-subtitle">SnapVideo is the productized arm of Third Coast Films, an Austin studio with 3,000+ videos behind it. Pick a package, send a brief, and get the same senior team on a fixed price and a real deadline.</p>
+          <a href="https://calendly.com/third-coast-films/discovery-call-w-snappyvid?utm_medium=site&utm_content=hero" class="btn btn-hero">Book a 15-min intro call</a>
+          <p class="hero-cta-note">15 minutes. We scope your first project, show examples from your industry, and you leave with a fixed quote and delivery date. No pitch.</p>
+        </div>
+
+        <div class="hero-mosaic">
+          <div class="mosaic-col">
+            <div class="mosaic-track">
+              <figure class="mosaic-tile tile-h" data-wistia="fidkqrjjss" data-aspect="horizontal"><img src="images/posters/booking.jpg" alt="Booking.com brand video" loading="eager"></figure>
+              <figure class="mosaic-tile tile-v" data-wistia="40bmx93vp7" data-aspect="vertical"><img src="images/posters/cloudflare.jpg" alt="Cloudflare social video" loading="eager"></figure>
+              <figure class="mosaic-tile tile-h" data-wistia="hzxhc5h22k" data-aspect="horizontal"><img src="images/posters/pave.jpg" alt="Pave product video" loading="eager"></figure>
+              <figure class="mosaic-tile tile-h" aria-hidden="true" data-wistia="fidkqrjjss" data-aspect="horizontal"><img src="images/posters/booking.jpg" alt="" loading="lazy"></figure>
+              <figure class="mosaic-tile tile-v" aria-hidden="true" data-wistia="40bmx93vp7" data-aspect="vertical"><img src="images/posters/cloudflare.jpg" alt="" loading="lazy"></figure>
+              <figure class="mosaic-tile tile-h" aria-hidden="true" data-wistia="hzxhc5h22k" data-aspect="horizontal"><img src="images/posters/pave.jpg" alt="" loading="lazy"></figure>
+            </div>
+          </div>
+          <div class="mosaic-col mosaic-col-down">
+            <div class="mosaic-track">
+              <figure class="mosaic-tile tile-v" data-wistia="xewwy4f3vw" data-aspect="vertical"><img src="images/posters/dronedeploy.jpg" alt="DroneDeploy social video" loading="eager"></figure>
+              <figure class="mosaic-tile tile-h" data-wistia="uh50zetyph" data-aspect="horizontal"><img src="images/posters/webflow.jpg" alt="Webflow customer spotlight" loading="eager"></figure>
+              <figure class="mosaic-tile tile-v" data-wistia="mkg8zffuge" data-aspect="vertical"><img src="images/posters/ladieswhocreate.jpg" alt="Ladies Who Create video" loading="eager"></figure>
+              <figure class="mosaic-tile tile-v" aria-hidden="true" data-wistia="xewwy4f3vw" data-aspect="vertical"><img src="images/posters/dronedeploy.jpg" alt="" loading="lazy"></figure>
+              <figure class="mosaic-tile tile-h" aria-hidden="true" data-wistia="uh50zetyph" data-aspect="horizontal"><img src="images/posters/webflow.jpg" alt="" loading="lazy"></figure>
+              <figure class="mosaic-tile tile-v" aria-hidden="true" data-wistia="mkg8zffuge" data-aspect="vertical"><img src="images/posters/ladieswhocreate.jpg" alt="" loading="lazy"></figure>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -828,8 +846,6 @@
   <script src="js/accordion.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/tracking.js"></script>
-  <script src="js/perspective-grid.js"></script>
-  <script src="js/logo-hover.js"></script>
-  <script src="js/lightbox.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>

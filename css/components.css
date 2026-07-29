@@ -865,3 +865,154 @@
 .pricing-badge-start {
   background: var(--color-primary);
 }
+
+/* --- Split dark hero (2026-07-29, Superside-style work mosaic) --- */
+
+.hero-split {
+  background: var(--color-primary);
+  text-align: left;
+  padding: 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: var(--space-2xl);
+  align-items: center;
+  min-height: 640px;
+  padding: var(--space-xl) 0;
+}
+
+.hero-split .hero-title {
+  color: #ffffff;
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--space-md);
+}
+
+.hero-accent {
+  color: #4ade80;
+}
+
+.hero-split .hero-subtitle {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  max-width: 520px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: var(--space-lg);
+}
+
+.btn-hero {
+  display: inline-block;
+  background: #ffffff;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  padding: 14px 32px;
+  border-radius: var(--radius-full);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.btn-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.hero-split .hero-cta-note {
+  color: rgba(255, 255, 255, 0.55);
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 420px;
+  text-align: left;
+}
+
+/* Mosaic: two vertically-scrolling columns of work tiles */
+.hero-mosaic {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  height: 640px;
+  overflow: hidden;
+}
+
+.hero-mosaic::before,
+.hero-mosaic::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 90px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-mosaic::before {
+  top: 0;
+  background: linear-gradient(to bottom, var(--color-primary), rgba(48, 49, 44, 0));
+}
+
+.hero-mosaic::after {
+  bottom: 0;
+  background: linear-gradient(to top, var(--color-primary), rgba(48, 49, 44, 0));
+}
+
+.mosaic-track {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  animation: mosaic-scroll 38s linear infinite;
+}
+
+.mosaic-col-down .mosaic-track {
+  animation-direction: reverse;
+  animation-duration: 46s;
+}
+
+.hero-mosaic:hover .mosaic-track {
+  animation-play-state: paused;
+}
+
+@keyframes mosaic-scroll {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mosaic-track { animation: none; }
+}
+
+.mosaic-tile {
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: transform var(--transition-base);
+}
+
+.mosaic-tile:hover {
+  transform: scale(1.03);
+}
+
+.mosaic-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mosaic-tile.tile-h { aspect-ratio: 16 / 10; }
+.mosaic-tile.tile-v { aspect-ratio: 9 / 14; }
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding: var(--space-2xl) 0 var(--space-xl);
+    gap: var(--space-xl);
+  }
+
+  .hero-split .hero-title { font-size: var(--font-size-3xl); }
+  .hero-mosaic { height: 360px; }
+}
