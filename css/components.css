@@ -1730,3 +1730,66 @@ h1, h2, h3, h4, h5,
   .future-video .features-grid { margin-top: 48px; }
   .fv-advantage { margin-top: 80px; }
 }
+
+/* Denser pricing cards + collapsible feature tails */
+.pricing-card {
+  padding: 36px 28px;
+  gap: 18px;
+}
+
+.pricing-card .pricing-header {
+  padding-bottom: 18px;
+}
+
+.pricing-card .pricing-price {
+  margin-bottom: 6px;
+}
+
+.pricing-card .pricing-description {
+  font-size: 0.9375rem;
+}
+
+.pricing-card .pricing-features,
+.pricing-card .pricing-includes {
+  gap: 10px;
+}
+
+.pricing-card .pricing-features li,
+.pricing-card .pricing-includes li {
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+.pricing-more {
+  margin-top: -4px;
+}
+
+.pricing-more summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+  padding-left: var(--space-lg);
+  transition: color 0.2s ease;
+}
+
+.pricing-more summary::-webkit-details-marker {
+  display: none;
+}
+
+.pricing-more summary:hover,
+.pricing-more[open] summary {
+  color: #111;
+}
+
+.pricing-more[open] summary {
+  margin-bottom: 10px;
+}
+
+.pricing-more:not([open]) .more-open { display: none; }
+.pricing-more[open] .more-closed { display: none; }
+
+.pricing-more .pricing-includes {
+  flex: none;
+}
