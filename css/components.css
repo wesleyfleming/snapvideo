@@ -1793,3 +1793,21 @@ h1, h2, h3, h4, h5,
 .pricing-more .pricing-includes {
   flex: none;
 }
+
+/* Brand color blocks: solid tinted section backgrounds from the wordmark palette */
+.clients {
+  background: var(--tint-yellow);
+}
+
+.stats-band {
+  background: var(--tint-pink);
+  padding: var(--space-3xl) 0;
+}
+
+.stories {
+  background: var(--tint-blue);
+}
+
+.faq {
+  background: var(--tint-orange);
+}

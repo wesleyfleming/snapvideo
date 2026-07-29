@@ -14,6 +14,20 @@
   --color-lavender: #e6d5ff;
   --color-green: #d5ffe6;
 
+  /* Brand palette (from the SNAPVIDEO wordmark offsets) */
+  --brand-yellow: #F7CA3C;
+  --brand-orange: #E57C30;
+  --brand-red: #DA2D27;
+  --brand-magenta: #A12489;
+  --brand-blue: #3385AA;
+  --brand-indigo: #222680;
+
+  /* Soft solid tints for section blocks */
+  --tint-yellow: #FBF1D4;
+  --tint-pink: #F7E8F3;
+  --tint-blue: #E4EFF5;
+  --tint-orange: #FBEBDC;
+
   /* Spacing */
   --space-xs: 0.5rem;    /* 8px */
   --space-sm: 1rem;      /* 16px */
