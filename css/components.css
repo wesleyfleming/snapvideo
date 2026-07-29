@@ -328,6 +328,7 @@
 
 /* Pricing Cards */
 .pricing-card {
+  position: relative;
   background: white;
   border: 2px solid var(--color-border);
   border-radius: var(--radius-xl);
@@ -670,4 +671,197 @@
 .footer-legal a {
   color: inherit;
   text-decoration: underline;
+}
+
+/* --- Week-2 additions (2026-07-29) --- */
+
+/* Hero showreel button */
+.hero-reel {
+  position: relative;
+  display: block;
+  margin: var(--space-lg) auto 0;
+  padding: 0;
+  border: none;
+  background: none;
+  width: min(420px, 90%);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hero-reel:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+.hero-reel img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.hero-reel-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-primary);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+.hero-reel-label {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+/* Examples poster grids */
+.examples-grid {
+  display: grid;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.examples-grid-h { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.examples-grid-h2 { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 720px; margin-left: auto; margin-right: auto; }
+.examples-grid-v { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 760px; margin-left: auto; margin-right: auto; }
+
+.example-card { margin: 0; }
+
+.example-thumb {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-bg-light);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.example-card:hover .example-thumb {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.example-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-h { aspect-ratio: 16 / 9; }
+.thumb-v { aspect-ratio: 9 / 16; }
+
+.example-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-primary);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  opacity: 0.85;
+  transition: opacity var(--transition-base);
+}
+
+.example-card:hover .example-play { opacity: 1; }
+
+.example-card figcaption {
+  margin-top: var(--space-xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .examples-grid-h, .examples-grid-h2 { grid-template-columns: 1fr; }
+  .examples-grid-v { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-sm); }
+}
+
+/* Video lightbox */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 12, 0.88);
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.lightbox-frame {
+  position: relative;
+  width: 100%;
+}
+
+.lightbox-horizontal { max-width: 960px; }
+.lightbox-vertical { max-width: 380px; }
+
+.lightbox-frame iframe {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-md);
+  background: #000;
+}
+
+.lightbox-horizontal iframe { aspect-ratio: 16 / 9; }
+.lightbox-vertical iframe { aspect-ratio: 9 / 16; }
+
+.lightbox-close {
+  position: absolute;
+  top: -44px;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.lightbox-close:hover { background: rgba(255, 255, 255, 0.3); }
+
+/* Pricing anchors, guarantees, badges */
+.pricing-anchor {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+.pricing-guarantee {
+  margin-top: var(--space-xs);
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+}
+
+.pricing-badge-start {
+  background: var(--color-primary);
 }

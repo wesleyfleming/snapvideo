@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SnapVideo - Make your videos extra Snappy</title>
-  <meta name="description" content="Get high-performing branded videos delivered lightning-fast — without the agency overhead, scope creep, or inconsistent quality. Trusted by Google, Webflow, Cloudflare, and more.">
+  <meta name="description" content="SnapVideo is the productized studio of Third Coast Films — flat-rate video packages from the team behind 3,000+ videos for Google, Webflow, and Cloudflare.">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -14,13 +14,13 @@
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="SnapVideo - Make your videos extra Snappy">
-  <meta property="og:description" content="Create video in half the time – with half the cost">
+  <meta property="og:description" content="The team Google and Webflow call for video. Now at a flat rate.">
   <meta property="og:image" content="images/og-image.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SnapVideo - Make your videos extra Snappy">
-  <meta name="twitter:description" content="Create video in half the time – with half the cost">
+  <meta name="twitter:description" content="The team Google and Webflow call for video. Now at a flat rate.">
   <meta name="twitter:image" content="images/og-image.png">
 
   <!-- Stylesheets -->
@@ -31,9 +31,6 @@
   <link rel="stylesheet" href="css/process-tabs.css">
   <link rel="stylesheet" href="css/features-grid.css">
   <link rel="stylesheet" href="css/animations.css">
-
-  <!-- Splide Carousel -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.2/dist/css/splide-core.min.css">
 
   <!-- Calendly -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
@@ -70,10 +67,16 @@
     <canvas id="perspectiveGrid" class="perspective-grid"></canvas>
     <div class="container">
       <div class="hero-content">
-        <h1 class="hero-title">Create video in half the time – with half the cost</h1>
-        <p class="hero-subtitle">Get high-performing branded videos delivered lightning-fast — without the agency overhead, scope creep, or inconsistent quality.</p>
+        <h1 class="hero-title">The team Google and Webflow call for video. Now at a flat rate.</h1>
+        <p class="hero-subtitle">SnapVideo is the productized arm of Third Coast Films, an Austin studio with 3,000+ videos behind it. Pick a package, send a brief, and get the same senior team on a fixed price and a real deadline.</p>
         <a href="https://calendly.com/third-coast-films/discovery-call-w-snappyvid?utm_medium=site&utm_content=hero" class="btn btn-secondary btn-large">Book a 15-min intro call</a>
         <p class="hero-cta-note">15 minutes. We scope your first project, show examples from your industry, and you leave with a fixed quote and delivery date. No pitch.</p>
+        <!-- Swap data-wistia to a dedicated montage reel when one exists -->
+        <button class="hero-reel" data-wistia="fidkqrjjss" data-aspect="horizontal" aria-label="Watch our work">
+          <img src="images/posters/booking.jpg" alt="Booking.com video still" loading="lazy">
+          <span class="hero-reel-play">&#9654;</span>
+          <span class="hero-reel-label">Watch our work</span>
+        </button>
       </div>
     </div>
   </section>
@@ -137,74 +140,45 @@
     <div class="container">
       <h2 class="section-title">Recent videos from our team:</h2>
 
-      <div class="splide" id="videoCarousel">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <div class="video-wrapper video-horizontal">
-                <iframe src="https://fast.wistia.net/embed/iframe/fidkqrjjss?web_component=true&seo=true" title="Booking.com Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="video-wrapper video-vertical">
-                <iframe src="https://fast.wistia.net/embed/iframe/40bmx93vp7?web_component=true&seo=true" title="Cloudflare Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="video-wrapper video-horizontal">
-                <iframe src="https://fast.wistia.net/embed/iframe/ag08w6ft40?web_component=true&seo=true" title="Clockwise Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="video-wrapper video-vertical">
-                <iframe src="https://fast.wistia.net/embed/iframe/xewwy4f3vw?web_component=true&seo=true" title="DroneDeploy Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="video-wrapper video-vertical">
-                <iframe src="https://fast.wistia.net/embed/iframe/mkg8zffuge?web_component=true&seo=true" title="Ladies Who Create Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="video-wrapper video-horizontal">
-                <iframe src="https://fast.wistia.net/embed/iframe/uh50zetyph?web_component=true&seo=true" title="Webflow Customer Spotlight Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="video-wrapper video-horizontal">
-                <iframe src="https://fast.wistia.net/embed/iframe/u2gprnw8yn?web_component=true&seo=true" title="Crew & Harps Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="video-wrapper video-horizontal">
-                <iframe src="https://fast.wistia.net/embed/iframe/eo5ohkn5ao?web_component=true&seo=true" title="Clockwise Video 2" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="video-wrapper video-vertical">
-                <iframe src="https://fast.wistia.net/embed/iframe/oj8pc8sztv?web_component=true&seo=true" title="Police 1 News 2025 Recap v2 Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="video-wrapper video-horizontal">
-                <iframe src="https://fast.wistia.net/embed/iframe/jedukj2aw4?web_component=true&seo=true" title="Amp Replit Rough v8 Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="video-wrapper video-horizontal">
-                <iframe src="https://fast.wistia.net/embed/iframe/xc7o5ytvxt?web_component=true&seo=true" title="Yana Amp on Amp V8 Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="video-wrapper video-horizontal">
-                <iframe src="https://fast.wistia.net/embed/iframe/hzxhc5h22k?web_component=true&seo=true" title="Pave Data 16x9 v5 Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div class="examples-grid examples-grid-h">
+        <figure class="example-card" data-wistia="fidkqrjjss" data-aspect="horizontal">
+          <div class="example-thumb thumb-h"><img src="images/posters/booking.jpg" alt="Booking.com brand video" loading="lazy"><span class="example-play">&#9654;</span></div>
+          <figcaption><strong>Booking.com</strong> — brand film</figcaption>
+        </figure>
+        <figure class="example-card" data-wistia="uh50zetyph" data-aspect="horizontal">
+          <div class="example-thumb thumb-h"><img src="images/posters/webflow.jpg" alt="Webflow customer spotlight video" loading="lazy"><span class="example-play">&#9654;</span></div>
+          <figcaption><strong>Webflow</strong> — customer spotlight</figcaption>
+        </figure>
+        <figure class="example-card" data-wistia="hzxhc5h22k" data-aspect="horizontal">
+          <div class="example-thumb thumb-h"><img src="images/posters/pave.jpg" alt="Pave product video" loading="lazy"><span class="example-play">&#9654;</span></div>
+          <figcaption><strong>Pave</strong> — product video</figcaption>
+        </figure>
       </div>
-    </div>
-  </section>
+      <div class="examples-grid examples-grid-v">
+        <figure class="example-card" data-wistia="40bmx93vp7" data-aspect="vertical">
+          <div class="example-thumb thumb-v"><img src="images/posters/cloudflare.jpg" alt="Cloudflare social video" loading="lazy"><span class="example-play">&#9654;</span></div>
+          <figcaption><strong>Cloudflare</strong> — social short</figcaption>
+        </figure>
+        <figure class="example-card" data-wistia="xewwy4f3vw" data-aspect="vertical">
+          <div class="example-thumb thumb-v"><img src="images/posters/dronedeploy.jpg" alt="DroneDeploy social video" loading="lazy"><span class="example-play">&#9654;</span></div>
+          <figcaption><strong>DroneDeploy</strong> — social short</figcaption>
+        </figure>
+        <figure class="example-card" data-wistia="mkg8zffuge" data-aspect="vertical">
+          <div class="example-thumb thumb-v"><img src="images/posters/ladieswhocreate.jpg" alt="Ladies Who Create video" loading="lazy"><span class="example-play">&#9654;</span></div>
+          <figcaption><strong>Ladies Who Create</strong> — series episode</figcaption>
+        </figure>
+      </div>
+      <div class="examples-grid examples-grid-h examples-grid-h2">
+        <figure class="example-card" data-wistia="ag08w6ft40" data-aspect="horizontal">
+          <div class="example-thumb thumb-h"><img src="images/posters/clockwise.jpg" alt="Clockwise explainer video" loading="lazy"><span class="example-play">&#9654;</span></div>
+          <figcaption><strong>Clockwise</strong> — explainer</figcaption>
+        </figure>
+        <figure class="example-card" data-wistia="u2gprnw8yn" data-aspect="horizontal">
+          <div class="example-thumb thumb-h"><img src="images/posters/crewharps.jpg" alt="Crew and Harps video" loading="lazy"><span class="example-play">&#9654;</span></div>
+          <figcaption><strong>Crew &amp; Harps</strong> — brand film</figcaption>
+        </figure>
+      </div>
+    </section>
 
   <!-- How It Works -->
   <section class="how-it-works" id="how-it-works">
@@ -519,36 +493,141 @@
     <div class="container">
       <h2 class="section-title">Packages for all types of projects:</h2>
 
-      <!-- One-Time Projects -->
+      <!-- Monthly Subscriptions -->
       <div class="pricing-subsection">
-        <p class="pricing-label">One-Time Projects</p>
-        <h3 class="pricing-subsection-title">Need videos now, not a subscription?</h3>
-        <p class="pricing-subsection-desc">Get high-quality videos with a single purchase. No monthly commitment required.</p>
+        <p class="pricing-label">Monthly Subscriptions</p>
+        <h3 class="pricing-subsection-title">Ongoing video production</h3>
+        <p class="pricing-subsection-desc">For brands that need consistent, high-quality video content every month.</p>
+        <p class="pricing-anchor">For comparison: a senior in-house video hire runs $8–10k+/month before gear and software — and you're still one person deep.</p>
       </div>
 
-      <div class="pricing-grid pricing-grid-onetime">
-        <!-- Social Starter -->
-        <div class="pricing-card pricing-card-onetime">
+      <div class="pricing-grid">
+        <!-- Starter -->
+        <div class="pricing-card">
           <div class="pricing-header">
-            <h3 class="pricing-name">Social Starter</h3>
-            <p class="pricing-price pricing-price-onetime">$3,500</p>
-            <p class="pricing-description">Perfect for quick campaigns and social launches</p>
+            <h3 class="pricing-name">Starter</h3>
+            <p class="pricing-price">$2,500/mo</p>
+            <p class="pricing-description">Perfect for solo creators and small teams</p>
+            <p class="pricing-guarantee">First-month guarantee: if you wouldn't rehire us after month one, we refund it.</p>
           </div>
 
           <ul class="pricing-features">
-            <li class="feature-highlight">3 social video ads (15–30s)</li>
-            <li class="feature-highlight">Optimized for all platforms</li>
+            <li class="feature-highlight">Dedicated Editor</li>
+            <li class="feature-highlight">Short-form Specialist</li>
+            <li class="feature-highlight">Pause anytime</li>
+          </ul>
+
+          <ul class="pricing-includes">
+            <li>5 short-form videos/month — flat</li>
+            <li>Shorts & talking-head edits</li>
+            <li>Monthly content calendar + hook bank</li>
+            <li>Creative direction from the Third Coast team</li>
+            <li>Basic motion graphics</li>
+            <li>AI generated clips</li>
+            <li>Unused videos roll over 1 month (up to 2)</li>
+            <li>2 rounds of revisions</li>
+            <li>Slack/email support</li>
+            <li>Brand kit integration</li>
+            <li><strong>ScriptHooks Pro included</strong> — our AI script &amp; hook engine (<a href="https://scripthooks.ai" target="_blank" rel="noopener">scripthooks.ai</a>)</li>
+          </ul>
+
+          <a href="https://calendly.com/third-coast-films/discovery-call-w-snappyvid?utm_medium=site&utm_content=pricing-starter-sub&a1=Starter%20Subscription" class="btn btn-secondary">Start with Starter</a>
+        </div>
+
+        <!-- Growth (Most Popular) -->
+        <div class="pricing-card pricing-card-popular">
+          <span class="pricing-badge">Recommended</span>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Growth</h3>
+            <p class="pricing-price">$4,500/mo</p>
+            <p class="pricing-description">Embedded content team, part-time</p>
+            <p class="pricing-guarantee">First-month guarantee: if you wouldn't rehire us after month one, we refund it.</p>
+          </div>
+
+          <ul class="pricing-features">
+            <li class="feature-highlight">Everything in Starter</li>
+            <li class="feature-highlight">Motion Designer + Editor</li>
+            <li class="feature-highlight">Priority Support</li>
+          </ul>
+
+          <ul class="pricing-includes">
+            <li>8 videos/month — flat, incl. up to 2 long-form</li>
+            <li>Long-form-to-shorts repurposing</li>
+            <li>Custom motion graphics</li>
+            <li>3 rounds of revisions</li>
+            <li>Quarterly strategy call with your producer</li>
+            <li>Custom thumbnails</li>
+            <li>Unlimited stock footage</li>
+            <li>Brand kit integration</li>
+            <li><strong>ScriptHooks Pro included</strong> — our AI script &amp; hook engine (<a href="https://scripthooks.ai" target="_blank" rel="noopener">scripthooks.ai</a>)</li>
+          </ul>
+
+          <a href="https://calendly.com/third-coast-films/discovery-call-w-snappyvid?utm_medium=site&utm_content=pricing-growth-sub&a1=Growth%20Subscription" class="btn btn-secondary">Start with Growth</a>
+        </div>
+
+        <!-- Studio -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Studio</h3>
+            <p class="pricing-price">from $10,000/mo</p>
+            <p class="pricing-description">Built around your content calendar</p>
+          </div>
+
+          <ul class="pricing-features">
+            <li class="feature-highlight">Dedicated Creative Team</li>
+            <li class="feature-highlight">Multi-format Specialists</li>
+            <li class="feature-highlight">Strategy Partnership</li>
+          </ul>
+
+          <ul class="pricing-includes">
+            <li>Custom video mix</li>
+            <li>Premium motion design</li>
+            <li>Revisions within 7-day window</li>
+            <li>Priority turnaround</li>
+            <li>Direct Slack channel</li>
+            <li>Monthly strategy calls</li>
+            <li>Custom brand templates</li>
+            <li><strong>ScriptHooks Pro included</strong> — our AI script &amp; hook engine (<a href="https://scripthooks.ai" target="_blank" rel="noopener">scripthooks.ai</a>)</li>
+          </ul>
+
+          <a href="https://calendly.com/third-coast-films/discovery-call-w-snappyvid?utm_medium=site&utm_content=pricing-studio-sub&a1=Studio%20Subscription" class="btn btn-secondary">Start with Studio</a>
+        </div>
+      </div>
+      <!-- One-Time Projects -->
+      <div class="pricing-subsection pricing-subsection-subscriptions">
+        <p class="pricing-label">One-Time Projects</p>
+        <h3 class="pricing-subsection-title">Want to test us before subscribing?</h3>
+        <p class="pricing-subsection-desc">Fixed price, fixed deadline, single purchase. No monthly commitment required.</p>
+        <p class="pricing-anchor">For comparison: a comparable agency quote for a launch package typically runs $15–30k.</p>
+      </div>
+
+      <div class="pricing-grid pricing-grid-onetime">
+        <!-- Pilot -->
+        <div class="pricing-card pricing-card-onetime">
+          <span class="pricing-badge pricing-badge-start">Start here</span>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Pilot</h3>
+            <p class="pricing-price pricing-price-onetime">$1,500</p>
+            <p class="pricing-description">One video to see how we work — credited toward your first subscription month</p>
+          </div>
+
+          <ul class="pricing-features">
+            <li class="feature-highlight">1 edited video (30–45s ad or up to 90s)</li>
+            <li class="feature-highlight">3 scripted hook options via ScriptHooks</li>
             <li class="feature-highlight">2 rounds of revisions</li>
           </ul>
 
           <ul class="pricing-includes">
-            <li>Brand kit integration</li>
-            <li>Platform-specific exports</li>
-            <li>Slack/email support</li>
+            <li>Cut from your footage, screen recordings & licensed stock</li>
+            <li>Motion graphics & platform exports</li>
+            <li>Full rights transferred</li>
+            <li>100% credited toward a subscription started within 30 days</li>
+            <li>If the first cut misses, full refund</li>
           </ul>
 
-          <p class="pricing-delivery">Delivered in 10 business days</p>
-          <a href="https://calendly.com/third-coast-films/discovery-call-w-snappyvid?utm_medium=site&utm_content=pricing-social-starter&a1=Social%20Starter" class="btn btn-secondary">Start with Social Starter</a>
+          <p class="pricing-delivery">First cut in 5 business days</p>
+          <!-- Swap this Calendly link for a Stripe Payment Link to make the Pilot self-serve -->
+          <a href="https://calendly.com/third-coast-films/discovery-call-w-snappyvid?utm_medium=site&utm_content=pricing-pilot&a1=Pilot" class="btn btn-secondary">Start your pilot</a>
         </div>
 
         <!-- Content Sprint (Best Value) -->
@@ -603,99 +682,6 @@
         </div>
       </div>
 
-      <!-- Monthly Subscriptions -->
-      <div class="pricing-subsection pricing-subsection-subscriptions">
-        <p class="pricing-label">Monthly Subscriptions</p>
-        <h3 class="pricing-subsection-title">Ongoing video production</h3>
-        <p class="pricing-subsection-desc">For brands that need consistent, high-quality video content every month.</p>
-      </div>
-
-      <div class="pricing-grid">
-        <!-- Starter -->
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3 class="pricing-name">Starter</h3>
-            <p class="pricing-price">$2,500/mo</p>
-            <p class="pricing-description">Perfect for solo creators and small teams</p>
-          </div>
-
-          <ul class="pricing-features">
-            <li class="feature-highlight">Dedicated Editor</li>
-            <li class="feature-highlight">Short-form Specialist</li>
-            <li class="feature-highlight">Pause anytime</li>
-          </ul>
-
-          <ul class="pricing-includes">
-            <li>4-6 edited videos/month</li>
-            <li>Shorts & talking-head edits</li>
-            <li>Basic motion graphics</li>
-            <li>AI generated clips</li>
-            <li>2 rounds of revisions</li>
-            <li>Slack/email support</li>
-            <li>Brand kit integration</li>
-            <li><strong>ScriptHooks Pro included</strong> — our AI script &amp; hook engine (<a href="https://scripthooks.ai" target="_blank" rel="noopener">scripthooks.ai</a>)</li>
-          </ul>
-
-          <a href="https://calendly.com/third-coast-films/discovery-call-w-snappyvid?utm_medium=site&utm_content=pricing-starter-sub&a1=Starter%20Subscription" class="btn btn-secondary">Start with Starter</a>
-        </div>
-
-        <!-- Growth (Most Popular) -->
-        <div class="pricing-card pricing-card-popular">
-          <span class="pricing-badge">Recommended</span>
-          <div class="pricing-header">
-            <h3 class="pricing-name">Growth</h3>
-            <p class="pricing-price">$4,500/mo</p>
-            <p class="pricing-description">Embedded content team, part-time</p>
-          </div>
-
-          <ul class="pricing-features">
-            <li class="feature-highlight">Everything in Starter</li>
-            <li class="feature-highlight">Motion Designer + Editor</li>
-            <li class="feature-highlight">Priority Support</li>
-          </ul>
-
-          <ul class="pricing-includes">
-            <li>8-12 videos/month</li>
-            <li>Mix of shorts + long-form</li>
-            <li>Custom motion graphics</li>
-            <li>3-4 rounds of revisions</li>
-            <li>Custom thumbnails</li>
-            <li>Unlimited stock footage</li>
-            <li>Brand kit integration</li>
-            <li><strong>ScriptHooks Pro included</strong> — our AI script &amp; hook engine (<a href="https://scripthooks.ai" target="_blank" rel="noopener">scripthooks.ai</a>)</li>
-          </ul>
-
-          <a href="https://calendly.com/third-coast-films/discovery-call-w-snappyvid?utm_medium=site&utm_content=pricing-growth-sub&a1=Growth%20Subscription" class="btn btn-secondary">Start with Growth</a>
-        </div>
-
-        <!-- Studio -->
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3 class="pricing-name">Studio</h3>
-            <p class="pricing-price">Custom</p>
-            <p class="pricing-description">Built around your content calendar</p>
-          </div>
-
-          <ul class="pricing-features">
-            <li class="feature-highlight">Dedicated Creative Team</li>
-            <li class="feature-highlight">Multi-format Specialists</li>
-            <li class="feature-highlight">Strategy Partnership</li>
-          </ul>
-
-          <ul class="pricing-includes">
-            <li>Custom video mix</li>
-            <li>Premium motion design</li>
-            <li>Revisions within 7-day window</li>
-            <li>Priority turnaround</li>
-            <li>Direct Slack channel</li>
-            <li>Monthly strategy calls</li>
-            <li>Custom brand templates</li>
-            <li><strong>ScriptHooks Pro included</strong> — our AI script &amp; hook engine (<a href="https://scripthooks.ai" target="_blank" rel="noopener">scripthooks.ai</a>)</li>
-          </ul>
-
-          <a href="https://calendly.com/third-coast-films/discovery-call-w-snappyvid?utm_medium=site&utm_content=pricing-studio-sub&a1=Studio%20Subscription" class="btn btn-secondary">Start with Studio</a>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -719,7 +705,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              <p>It depends on your plan and video complexity. Starter includes 4-6 edited videos per month (shorts and talking-head edits). Growth includes 8-12 videos per month (mix of shorts and longer pieces). Studio plans are custom-built around your content calendar.</p>
+              <p>Flat counts, no ranges: Starter includes 5 short-form videos per month, Growth includes 8 videos per month (up to 2 of them long-form). Unused videos roll over one month, up to 2. Studio plans are custom-built around your content calendar.</p>
             </div>
           </div>
 
@@ -735,11 +721,21 @@
 
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
+              <span>Do you shoot footage, or edit what we send?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>SnapVideo packages are post-production: we cut from your footage, screen recordings, product UI captures, licensed stock, and motion graphics — which is exactly what most SaaS and social content needs. When a project calls for a real shoot (crew, cameras, location), that's produced by our parent studio Third Coast Films — mention it on the intro call and we'll scope both together.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
               <span>How many revisions do I get?</span>
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              <p>Starter includes 2 rounds of revisions per video. Growth includes 3-4 rounds. Studio plans include revisions within a 7-day window from first draft delivery, so you're never stuck waiting.</p>
+              <p>Starter includes 2 rounds of revisions per video. Growth includes 3 rounds. Studio plans include revisions within a 7-day window from first draft delivery, so you're never stuck waiting.</p>
             </div>
           </div>
 
@@ -779,7 +775,7 @@
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
-              <p>Yes, we're happy to create a sample video so you can see our quality firsthand. Trial videos include a watermark. Book a call to discuss.</p>
+              <p>Two ways: we're happy to create a free watermarked sample video so you can see our quality firsthand — or start with the $1,500 Pilot: one finished video, first cut in 5 business days, fully credited toward your first subscription month, refunded if the first cut misses.</p>
             </div>
           </div>
 
@@ -823,18 +819,17 @@
 
       <div class="footer-legal">
         <p>SnapVideo is the productized studio of <a href="https://thirdcoastfilms.com" target="_blank" rel="noopener">Third Coast Films</a> &mdash; Austin, TX</p>
-        <p>&copy; 2026 Third Coast Films &middot; <a href="mailto:wes@thirdcoastfilms.com">wes@thirdcoastfilms.com</a></p>
+        <p>&copy; 2026 Third Coast Films &middot; <a href="mailto:wes@thirdcoastfilms.com">wes@thirdcoastfilms.com</a> &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></p>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.2/dist/js/splide.min.js"></script>
-  <script src="js/carousel.js"></script>
   <script src="js/accordion.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/tracking.js"></script>
   <script src="js/perspective-grid.js"></script>
   <script src="js/logo-hover.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 </html>
