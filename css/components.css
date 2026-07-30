@@ -1924,3 +1924,20 @@ body {
 .faq-cta p {
   color: rgba(10, 10, 10, 0.75);
 }
+
+/* Three-lane hero mosaic with bolder stills */
+.hero-grid {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.hero-mosaic {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mosaic-col:nth-child(3) .mosaic-track {
+  animation-duration: 42s;
+}
+
+.hero-split .hero-title em {
+  white-space: nowrap;
+}
