@@ -1,12 +1,12 @@
 /* CSS Custom Properties (Variables) */
 :root {
-  /* Colors */
-  --color-primary: #30312c;
+  /* Colors — Bold palette: indigo is the structural dark, chalk is the light */
+  --color-primary: #222680;
   --color-text: #333333;
   --color-text-light: #666666;
-  --color-bg: #ffffff;
-  --color-bg-light: #f8f8f8;
-  --color-border: #e0e0e0;
+  --color-bg: #F5F3EF;
+  --color-bg-light: #ECE8DF;
+  --color-border: #E1DCD0;
 
   /* Accent Colors (for flip cards) */
   --color-pink: #ffd6e8;

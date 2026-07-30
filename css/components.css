@@ -1350,7 +1350,7 @@ h1, h2, h3, h4, h5,
 }
 
 .future-video {
-  background: #fff;
+  background: var(--color-bg);
 }
 
 /* Editorial header: eyebrow + rule, big mixed-face headline, question, lede */
@@ -1834,4 +1834,93 @@ h1, h2, h3, h4, h5,
   font-weight: 400;
   font-size: 1.04em;
   letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
+   Bold palette adoption (colors-only): chalk canvas, indigo dark, full-sat blocks
+   ========================================================================== */
+
+body {
+  background: var(--color-bg);
+}
+
+.navbar {
+  background: rgba(245, 243, 239, 0.95);
+}
+
+/* Full-saturation section blocks */
+.clients {
+  background: var(--brand-yellow);
+}
+
+.clients-heading {
+  color: rgba(10, 10, 10, 0.85);
+}
+
+.stats-band {
+  background: var(--brand-magenta);
+}
+
+.stats-band .stat-n {
+  color: #F5F3EF;
+}
+
+.stats-band .stat-l {
+  color: rgba(245, 243, 239, 0.75);
+}
+
+.stories {
+  background: var(--brand-blue);
+}
+
+.stories .section-title {
+  color: #F5F3EF;
+}
+
+.stories .compare-label {
+  color: rgba(245, 243, 239, 0.85) !important;
+}
+
+.faq {
+  background: var(--brand-orange);
+}
+
+.faq-header h2 {
+  color: #0A0A0A;
+}
+
+/* Indigo dark surfaces */
+.step-tab.active {
+  background: var(--brand-indigo);
+}
+
+.content-cta,
+.future-video .content-cta {
+  background: var(--brand-indigo);
+}
+
+.content-cta:hover,
+.future-video .content-cta:hover {
+  background: #171A5C;
+}
+
+/* Chalk text on indigo */
+.hero-split .hero-title {
+  color: #F5F3EF;
+}
+
+/* Signature pairing: indigo + gold nav CTA */
+.btn-primary {
+  color: var(--brand-yellow);
+}
+
+/* Legible small text on the gold and orange blocks */
+.testimonial-band figcaption,
+.studio-attribution,
+.studio-attribution a {
+  color: rgba(10, 10, 10, 0.72);
+}
+
+.faq-cta p {
+  color: rgba(10, 10, 10, 0.75);
 }
