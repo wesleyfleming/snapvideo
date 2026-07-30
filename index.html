@@ -138,11 +138,43 @@
   <section class="clients">
     <div class="container">
 
-      <figure class="testimonial-band">
-        <blockquote>&ldquo;One of our go-to collaborators that we trust with projects that are high visibility and high touch.&rdquo;</blockquote>
-        <figcaption>Misha Sundukovskiy &mdash; Video Lead, Webflow</figcaption>
-        <p class="studio-attribution">SnapVideo is the productized studio of <a href="https://thirdcoastfilms.com" target="_blank" rel="noopener">Third Coast Films</a> &mdash; the Austin team behind 3,000+ videos for brands like Google, Webflow, and Cloudflare.</p>
-      </figure>
+      <div class="quote-deck" id="quoteDeck" aria-label="Client testimonials">
+        <article class="quote-card active">
+          <div class="quote-head">
+            <span class="quote-avatar" style="background: var(--brand-blue);">MS</span>
+            <span class="quote-who"><strong>Misha Sundukovskiy</strong><em>Video Lead, Webflow</em></span>
+            <img class="quote-logo" src="images/logos/Webflow-logo.png" alt="Webflow">
+          </div>
+          <p>&ldquo;Third Coast has helped us execute a number of films with both high production value and efficiency. They have become one of our go-to collaborators that we trust with projects that are high visibility and high touch.&rdquo;</p>
+        </article>
+        <article class="quote-card">
+          <div class="quote-head">
+            <span class="quote-avatar" style="background: var(--brand-indigo);">NV</span>
+            <span class="quote-who"><strong>Nico Valencia</strong><em>New Business Discovery, Intuit</em></span>
+            <img class="quote-logo" src="images/logos/Intuit-logo.png" alt="Intuit">
+          </div>
+          <p>&ldquo;Wes and the team at Third Coast asked all the right questions and provided creative expertise every step of the way, taking the ideas that were in our mind and turning them into masterful videos that distill complex topics into easy engaging videos for our customers.&rdquo;</p>
+        </article>
+        <article class="quote-card">
+          <div class="quote-head">
+            <span class="quote-avatar" style="background: var(--brand-orange);">DS</span>
+            <span class="quote-who"><strong>Dave S.</strong><em>Head of Product Marketing, Cloudflare</em></span>
+            <img class="quote-logo" src="images/logos/Cloudflare.png" alt="Cloudflare">
+          </div>
+          <p>&ldquo;Third Coast is top-notch. We&rsquo;ve been working with them on taking our product videos, animations, and customer success stories to the next level. By all measures, they have delivered.&rdquo;</p>
+        </article>
+        <article class="quote-card">
+          <div class="quote-head">
+            <span class="quote-avatar" style="background: var(--brand-magenta);">J</span>
+            <span class="quote-who"><strong>Jake</strong><em>Sr. Designer, Amplitude</em></span>
+            <img class="quote-logo" src="images/logos/Amplitude.png" alt="Amplitude">
+          </div>
+          <p>&ldquo;Third Coast has been an incredible team to work with. We&rsquo;ve relied on them as an extension of the Amplitude team and have been consistently impressed with their ability to work with us on the strategy of our campaigns and produce great videos that make our product and customers shine.&rdquo;</p>
+        </article>
+      </div>
+      <div class="quote-dots" id="quoteDots" role="tablist" aria-label="Choose testimonial"></div>
+
+      <p class="studio-attribution">SnapVideo is the productized studio of <a href="https://thirdcoastfilms.com" target="_blank" rel="noopener">Third Coast Films</a> &mdash; the Austin team behind 3,000+ videos for brands like Google, Webflow, and Cloudflare.</p>
     </div>
   </section>
 
@@ -886,5 +918,6 @@
   <script src="js/tabs.js"></script>
   <script src="js/tracking.js"></script>
     <script src="js/lightbox.js"></script>
+  <script src="js/quotes.js"></script>
 </body>
 </html>
