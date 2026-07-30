@@ -2138,3 +2138,17 @@ body {
 .hero-video {
   min-height: calc(100vh - 62px);
 }
+
+/* Client claim line under the hero stats */
+.hero-clients-line {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: rgba(245, 243, 239, 0.9);
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0 24px 34px;
+  margin-top: -6px;
+}
