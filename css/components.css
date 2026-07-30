@@ -2124,3 +2124,17 @@ body {
   .hero-stats { gap: 28px; padding: 22px 16px 30px; }
   .logo-band .clients-track img { height: 20px; }
 }
+
+/* Full-width nav: logo hard left, controls hard right */
+.navbar .container {
+  max-width: none;
+  padding: 0 clamp(20px, 3vw, 48px);
+}
+
+.navbar {
+  padding: 12px 0;
+}
+
+.hero-video {
+  min-height: calc(100vh - 62px);
+}
